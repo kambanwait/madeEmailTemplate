@@ -2,6 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Kameron:400,700' rel='stylesheet' type='text/css'>
+
         <title>*|MC:SUBJECT|*</title>
         <style type="text/css">
             /* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
@@ -22,8 +27,12 @@
 
             /* ========== Page Styles ========== */
 
-            #bodyCell{padding:20px;}
-            #templateContainer{width:600px;}
+            #bodyCell{
+                /*@editable*/ padding:20px;
+            }
+            #templateContainer{
+                /*@editable*/ width:600px;
+            }
 
             /**
             * @tab Page
@@ -32,7 +41,7 @@
             * @theme page
             */
             body, #bodyTable{
-                /*@editable*/ background-color:#DEE0E2;
+                /*@editable*/ background-color:#FFF;
             }
 
             /**
@@ -42,7 +51,7 @@
             * @theme page
             */
             #bodyCell{
-                /*@editable*/ border-top:4px solid #BBBBBB;
+                /*@editable*/ border-top: 0px solid #FFF;
             }
 
             /**
@@ -51,8 +60,38 @@
             * @tip Set the border for your email.
             */
             #templateContainer{
-                /*@editable*/ border:1px solid #BBBBBB;
+                /*@editable*/ border: 0px solid #FFF;
             }
+
+            .flexibleContainerCell{
+                /*@editable*/ padding-top:20px;
+                /*@editable*/ /*padding-right:10px;*/
+                /*@editable*/ /*padding-left:10px;*/
+            }
+                table[class="flexibleContainer"] {
+                    /*@editable*/ margin-left: 0;
+                    /*@editable*/ margin-right: 0;
+                    /*@editable*/ padding-left: 0;
+                    /*@editable*/ padding-right: 0;
+                }
+
+                .flexibleContainer .textContent{
+                    /*@editable*/ vertical-align: middle;
+                    /*@editable*/ text-align: center;
+                    /*@editable*/ padding-left: 30px;
+                    /*@editable*/ padding-right: 30px;
+                }
+                .flexibleContainer .imageContent {
+                    /*@editable*/ text-align: center;
+                    /*@editable*/ padding-left: 20px;
+                    /*@editable*/ padding-right: 20px;
+                }
+                    .flexibleContainer .imageContent.left {
+                        /*@editable*/ padding-left: 0;
+                    }
+                    .flexibleContainer .imageContent.right {
+                        /*@editable*/ padding-right: 0;
+                    }
 
             /**
             * @tab Page
@@ -61,18 +100,19 @@
             * @style heading 1
             */
             h1{
-                /*@editable*/ color:#202020 !important;
-                display:block;
-                /*@editable*/ font-family:Helvetica;
-                /*@editable*/ font-size:26px;
+                /*@editable*/ color:#000 !important;
+                /*@editable*/ display:block;
+                /*@editable*/ font-family:'Montserrat',sans-serif;
+                /*@editable*/ text-transform:uppercase;
+                /*@editable*/ font-size:25px;
                 /*@editable*/ font-style:normal;
-                /*@editable*/ font-weight:bold;
+                /*@editable*/ font-weight:normal;
                 /*@editable*/ line-height:100%;
                 /*@editable*/ letter-spacing:normal;
-                margin-top:0;
-                margin-right:0;
-                margin-bottom:10px;
-                margin-left:0;
+                /*@editable*/ margin-top:0;
+                /*@editable*/ margin-right:0;
+                /*@editable*/ margin-bottom:10px;
+                /*@editable*/ margin-left:0;
                 /*@editable*/ text-align:left;
             }
 
@@ -83,19 +123,20 @@
             * @style heading 2
             */
             h2{
-                /*@editable*/ color:#404040 !important;
-                display:block;
-                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ color:#000 !important;
+                /*@editable*/ display:block;
+                /*@editable*/ font-family:'Montserrat',sans-serif;
+                /*@editable*/ text-transform:uppercase;
                 /*@editable*/ font-size:20px;
                 /*@editable*/ font-style:normal;
-                /*@editable*/ font-weight:bold;
+                /*@editable*/ font-weight:normal;
                 /*@editable*/ line-height:100%;
                 /*@editable*/ letter-spacing:normal;
-                margin-top:0;
-                margin-right:0;
-                margin-bottom:10px;
-                margin-left:0;
-                /*@editable*/ text-align:left;
+                /*@editable*/ margin-top:0;
+                /*@editable*/ margin-right:0;
+                /*@editable*/ margin-bottom:10px;
+                /*@editable*/ margin-left:0;
+                /*@editable*/ text-align:center;
             }
 
             /**
@@ -105,19 +146,18 @@
             * @style heading 3
             */
             h3{
-                /*@editable*/ color:#606060 !important;
-                display:block;
-                /*@editable*/ font-family:Helvetica;
-                /*@editable*/ font-size:16px;
-                /*@editable*/ font-style:italic;
+                /*@editable*/ color:#000 !important;
+                /*@editable*/ display:block;
+                /*@editable*/ font-family:'Kameron','Georgia',serif;
+                /*@editable*/ font-size:22px;
                 /*@editable*/ font-weight:normal;
                 /*@editable*/ line-height:100%;
                 /*@editable*/ letter-spacing:normal;
-                margin-top:0;
-                margin-right:0;
-                margin-bottom:10px;
-                margin-left:0;
-                /*@editable*/ text-align:left;
+                /*@editable*/ margin-top:0;
+                /*@editable*/ margin-right:0;
+                /*@editable*/ margin-bottom:5px;
+                /*@editable*/ margin-left:0;
+                /*@editable*/ text-align:center;
             }
 
             /**
@@ -127,33 +167,80 @@
             * @style heading 4
             */
             h4{
-                /*@editable*/ color:#808080 !important;
-                display:block;
-                /*@editable*/ font-family:Helvetica;
-                /*@editable*/ font-size:14px;
-                /*@editable*/ font-style:italic;
+                /*@editable*/ color:#000 !important;
+                /*@editable*/ display:block;
+                /*@editable*/ font-family:'Kameron','Georgia',serif;
+                /*@editable*/ font-size:18px;
                 /*@editable*/ font-weight:normal;
                 /*@editable*/ line-height:100%;
                 /*@editable*/ letter-spacing:normal;
-                margin-top:0;
-                margin-right:0;
-                margin-bottom:10px;
-                margin-left:0;
-                /*@editable*/ text-align:left;
+                /*@editable*/ margin-top:0;
+                /*@editable*/ margin-right:0;
+                /*@editable*/ margin-bottom:10px;
+                /*@editable*/ margin-left:0;
+                /*@editable*/ text-align:center;
             }
+            .leftAlign, .flexibleContainer .leftAlign {
+                /*@editable*/ text-align: left;
+                /*@editable*/ padding-left: 0;
+            }
+                .leftAlign, .flexibleContainer .leftAlign h3,
+                .leftAlign, .flexibleContainer .leftAlign .buttonWapper {
+                    /*@editable*/ text-align: left;
+                }
+                .leftAlign, .flexibleContainer .leftAlign p  {
+                    /*@editable*/ margin-top: 5px;
+                }
 
+            .buttonWapper {
+                /*@editable*/ display: block;
+                /*@editable*/ text-align: center;
+                /*@editable*/ margin-top: 0;
+                /*@editable*/ margin-right: auto;
+                /*@editable*/ margin-bottom: 0;
+                /*@editable*/ margin-left: auto;
+            }
+                .button {
+                    /*@editable*/ cursor: pointer;
+                    /*@editable*/ font-family:'Montserrat',sans-serif;
+                    /*@editable*/ font-size:10px;
+                    /*@editable*/ font-weight:bold;
+                    /*@editable*/ letter-spacing:normal;
+                    /*@editable*/ text-transform:uppercase;
+                    /*@editable*/ background-color: rgb(250, 234, 37);
+                    /*@editable*/ border-bottom-color: rgb(226, 224, 205);
+                    /*@editable*/ border-bottom-left-radius: 4px;
+                    /*@editable*/ border-bottom-right-radius: 4px;
+                    /*@editable*/ border-bottom-style: solid;
+                    /*@editable*/ border-bottom-width: 1px;
+                    /*@editable*/ border-left-color: rgb(226, 224, 205);
+                    /*@editable*/ border-left-style: solid;
+                    /*@editable*/ border-left-width: 1px;
+                    /*@editable*/ border-right-color: rgb(226, 224, 205);
+                    /*@editable*/ border-right-style: solid;
+                    /*@editable*/ border-right-width: 1px;
+                    /*@editable*/ border-top-color: rgb(226, 224, 205);
+                    /*@editable*/ border-top-left-radius: 4px;
+                    /*@editable*/ border-top-right-radius: 4px;
+                    /*@editable*/ border-top-style: solid;
+                    /*@editable*/ border-top-width: 1px;
+                    /*@editable*/ border-width: 1px;
+                    /*@editable*/ width: auto;
+                    /*@editable*/ display: inline-block;
+                    /*@editable*/ margin-top: 0;
+                    /*@editable*/ margin-right: auto;
+                    /*@editable*/ margin-bottom: 0;
+                    /*@editable*/ margin-left: auto;
+                    /*@editable*/ background-color: #FAEA25;
+                    /*@editable*/ text-align: center;
+                    /*@editable*/ padding-bottom: 4px;
+                    /*@editable*/ padding-left: 15px;
+                    /*@editable*/ padding-right: 15px;
+                    /*@editable*/ padding-top: 5px;
+                    /*@editable*/ line-height: 13px;
+                    /*@editable*/ color:#000000;
+                }
             /* ========== Header Styles ========== */
-
-            /**
-            * @tab Header
-            * @section preheader style
-            * @tip Set the background color and bottom border for your email's preheader area.
-            * @theme header
-            */
-            #templatePreheader{
-                /*@editable*/ background-color:#F4F4F4;
-                /*@editable*/ border-bottom:1px solid #CCCCCC;
-            }
 
             /**
             * @tab Header
@@ -162,7 +249,8 @@
             */
             .preheaderContent{
                 /*@editable*/ color:#808080;
-                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-family:'Kameron','Georgia',serif;
+                /*@editable*/ font-weight:400 ;
                 /*@editable*/ font-size:10px;
                 /*@editable*/ line-height:125%;
                 /*@editable*/ text-align:left;
@@ -186,9 +274,7 @@
             * @theme header
             */
             #templateHeader{
-                /*@editable*/ background-color:#F4F4F4;
-                /*@editable*/ border-top:1px solid #FFFFFF;
-                /*@editable*/ border-bottom:1px solid #CCCCCC;
+                /*@editable*/ background-color:#FFF;
             }
 
             /**
@@ -198,17 +284,34 @@
             */
             .headerContent{
                 /*@editable*/ color:#505050;
-                /*@editable*/ font-family:Helvetica;
-                /*@editable*/ font-size:20px;
-                /*@editable*/ font-weight:bold;
+                /*@editable*/ font-family:'Kameron','Georgia',serif;
+                /*@editable*/ font-size:12px;
+                /*@editable*/ font-weight:normal;
                 /*@editable*/ line-height:100%;
-                /*@editable*/ padding-top:0;
-                /*@editable*/ padding-right:0;
-                /*@editable*/ padding-bottom:0;
-                /*@editable*/ padding-left:0;
                 /*@editable*/ text-align:left;
                 /*@editable*/ vertical-align:middle;
+                /*@editable*/ border-bottom: 1px solid #000;
+                /*@editable*/ padding-top:20px;
+                /*@editable*/ padding-right:10px;
+                /*@editable*/ padding-bottom:0px;
+                /*@editable*/ padding-left:10px;
             }
+                .headerContent#inviteFriends,.headerContent#tagline{
+                    /*@editable*/ width:110px;
+                }
+
+                .headerContent.right {
+                    /*@editable*/ text-align: right;
+                }
+                .headerContent.logo {
+                    /*@editable*/ text-align: center;
+                    /*@editable*/ padding-top: 10px;
+                    /*@editable*/ padding-bottom: 10px;
+                }
+                #madeLogo{
+                    /*@editable*/ height:41px;
+                    /*@editable*/ max-width:155px;
+                }
 
             /**
             * @tab Header
@@ -221,24 +324,34 @@
                 /*@editable*/ text-decoration:underline;
             }
 
-            #headerImage{
-                height:auto;
-                max-width:600px;
+            /**
+            * @Special offers
+            **/
+            #specialOffer {
+                /*@editable*/ background-color: #fffcc7;
+                /*@editable*/ font-family:'Kameron','Georgia',serif;
+                /*@editable*/ font-size: 14px;
+                /*@editable*/ font-weight: 400;
+                /*@editable*/ margin-top: 10px;
+                /*@editable*/ margin-left: auto;
+                /*@editable*/ margin-right: auto;
+                /*@editable*/ margin-bottom: 0;
+                /*@editable*/ display: block;
+                /*@editable*/ width: 97%;
+                /*@editable*/ text-align: center;
+                /*@editable*/ min-width: 35px;
             }
+                #specialOfferContent {
+                    /*@editable*/ padding-top: 10px;
+                    /*@editable*/ padding-right: 10px;
+                    /*@editable*/ padding-bottom: 10px;
+                    /*@editable*/ padding-left: 10px;
+                }
+                    #specialOfferContent span {
+                        /*@editable*/ font-weight: bold;
+                    }
 
             /* ========== Body Styles ========== */
-
-            /**
-            * @tab Body
-            * @section body style
-            * @tip Set the background color and borders for your email's body area.
-            */
-            #templateBody{
-                /*@editable*/ background-color:#F4F4F4;
-                /*@editable*/ border-top:1px solid #FFFFFF;
-                /*@editable*/ border-bottom:1px solid #CCCCCC;
-            }
-
             /**
             * @tab Body
             * @section body text
@@ -247,16 +360,28 @@
             */
             .bodyContent{
                 /*@editable*/ color:#505050;
-                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-family:'Kameron','Georgia',serif;
                 /*@editable*/ font-size:16px;
                 /*@editable*/ line-height:150%;
-                padding-top:20px;
-                padding-right:20px;
-                padding-bottom:20px;
-                padding-left:20px;
+                /*@editable*/ padding-top:15px;
+                /*@editable*/ padding-right:10px;
+                /*@editable*/ padding-bottom:20px;
+                /*@editable*/ padding-left:10px;
                 /*@editable*/ text-align:left;
             }
-
+                .bodyContent.header {
+                    /*@editable*/ padding-bottom:0px;
+                }
+                .bodyContent.copy {
+                    /*@editable*/ padding-bottom:0px;
+                    /*@editable*/ padding-top:10px;
+                    /*@editable*/ text-align:center;
+                    /*@editable*/ width:80%;
+                    /*@editable*/ display:block;
+                    /*@editable*/ margin-left: auto;
+                    /*@editable*/ margin-right: auto;
+                    /*@editable*/ line-height: 125%;
+                }
             /**
             * @tab Body
             * @section body link
@@ -267,28 +392,45 @@
                 /*@editable*/ font-weight:normal;
                 /*@editable*/ text-decoration:underline;
             }
-
+            .bodyContent h1 {
+                /*@editable*/ text-align: center;
+                /*@editable*/ padding-bottom: 0px;
+            }
             .bodyContent img{
-                display:inline;
-                height:auto;
-                max-width:560px;
+                /*@editable*/ display:inline;
+                /*@editable*/ height:auto;
+                /*@editable*/ max-width:560px;
+            }
+            .bodyContent p {
+               /*@editable*/ margin-top: 5px;
+               /*@editable*/ margin-bottom: 15px;
+               /*@editable*/ margin-left: 0;
+               /*@editable*/ margin-right: 0;
             }
 
+            /* ========== Hero image styles ========== */
+            #heroImageWrapper {}
+            #smallHeroImageWrapper {}
+                #smallHeroImageWrapper #smallHeroCopy {
+                    /*@editable*/ text-align: center;
+                    /*@editable*/ width: 100%;
+                    /*@editable*/ margin-top: 15px;
+                    /*@editable*/ display: block;
+                }
+
+                #smallHeroImageWrapper #smallHeroCopy {
+                    /*@editable*/ margin-bottom: 15px;
+                    /*@editable*/ display: block;
+                }
+                #smallHeroImageWrapper .buttonWapper {
+                    /*@editable*/ margin-bottom: 15px;
+                    /*@editable*/ display: block;
+                }
             /* ========== Column Styles ========== */
 
-            .templateColumnContainer{width:260px;}
-
-            /**
-            * @tab Columns
-            * @section column style
-            * @tip Set the background color and borders for your email's column area.
-            */
-            #templateColumns{
-                /*@editable*/ background-color:#F4F4F4;
-                /*@editable*/ border-top:1px solid #FFFFFF;
-                /*@editable*/ border-bottom:1px solid #CCCCCC;
+            .templateColumnContainer{
+                /*@editable*/ width:280px;
             }
-
             /**
             * @tab Columns
             * @section left column text
@@ -296,13 +438,13 @@
             */
             .leftColumnContent{
                 /*@editable*/ color:#505050;
-                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-family:'Kameron','Georgia',serif;
                 /*@editable*/ font-size:14px;
                 /*@editable*/ line-height:150%;
-                padding-top:0;
-                padding-right:20px;
-                padding-bottom:20px;
-                padding-left:20px;
+                /*@editable*/ padding-top:0;
+                /*@editable*/ padding-right:10px;
+                /*@editable*/ padding-bottom:20px;
+                /*@editable*/ padding-left:10px;
                 /*@editable*/ text-align:left;
             }
 
@@ -319,18 +461,46 @@
 
             /**
             * @tab Columns
+            * @section center column text
+            * @tip Set the styling for your email's center column content text. Choose a size and color that is easy to read.
+            */
+            .centerColumnContent{
+                /*@editable*/ color:#505050;
+                /*@editable*/ font-family:'Kameron','Georgia',serif;
+                /*@editable*/ font-size:14px;
+                /*@editable*/ line-height:150%;
+                /*@editable*/ padding-top:0;
+                /*@editable*/ padding-right:10px;
+                /*@editable*/ padding-bottom:20px;
+                /*@editable*/ padding-left:10px;
+                /*@editable*/ text-align:left;
+            }
+
+            /**
+            * @tab Columns
+            * @section center column link
+            * @tip Set the styling for your email's center column content links. Choose a color that helps them stand out from your text.
+            */
+            .centerColumnContent a:link, .centerColumnContent a:visited, /* Yahoo! Mail Override */ .centerColumnContent a .yshortcuts /* Yahoo! Mail Override */{
+                /*@editable*/ color:#EB4102;
+                /*@editable*/ font-weight:normal;
+                /*@editable*/ text-decoration:underline;
+            }
+
+            /**
+            * @tab Columns
             * @section right column text
             * @tip Set the styling for your email's right column content text. Choose a size and color that is easy to read.
             */
             .rightColumnContent{
                 /*@editable*/ color:#505050;
-                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-family:'Kameron','Georgia',serif;
                 /*@editable*/ font-size:14px;
                 /*@editable*/ line-height:150%;
-                padding-top:0;
-                padding-right:20px;
-                padding-bottom:20px;
-                padding-left:20px;
+                /*@editable*/ padding-top:0;
+                /*@editable*/ padding-right:10px;
+                /*@editable*/ padding-bottom:20px;
+                /*@editable*/ padding-left:10px;
                 /*@editable*/ text-align:left;
             }
 
@@ -345,25 +515,30 @@
                 /*@editable*/ text-decoration:underline;
             }
 
-            .leftColumnContent img, .rightColumnContent img{
-                display:inline;
-                height:auto;
-                max-width:260px;
+            .leftColumnContent img, .centerColumnContent img, .rightColumnContent img{
+                /*@editable*/ display:block;
+                /*@editable*/ height:auto;
+                /*@editable*/ max-width:280px;
+                /*@editable*/ width: 100%;
+                /*@editable*/ margin-right: auto;
+                /*@editable*/ margin-left: auto;
             }
+
+            /* ========== CUSTOMER MESSAGE ========== */
+            #CustomerMessage {
+                /*@editable*/ padding-top: 70px;
+                /*@editable*/ padding-bottom: 70px;
+                /*@editable*/ padding-left: 85px;
+                /*@editable*/ padding-right: 85px;
+                /*@editable*/ border-top: 1px dotted #000000;
+                /*@editable*/ border-bottom: 1px dotted #000000;
+            }
+                #CustomerMessage p {
+                    /*@editable*/ margin-top: 0;
+                    /*@editable*/ margin-bottom: 0
+                }
 
             /* ========== Footer Styles ========== */
-
-            /**
-            * @tab Footer
-            * @section footer style
-            * @tip Set the background color and borders for your email's footer area.
-            * @theme footer
-            */
-            #templateFooter{
-                /*@editable*/ background-color:#F4F4F4;
-                /*@editable*/ border-top:1px solid #FFFFFF;
-            }
-
             /**
             * @tab Footer
             * @section footer text
@@ -372,14 +547,14 @@
             */
             .footerContent{
                 /*@editable*/ color:#808080;
-                /*@editable*/ font-family:Helvetica;
-                /*@editable*/ font-size:10px;
+                /*@editable*/ font-family:'Kameron','Georgia',serif;
+                /*@editable*/ font-size:12px;
                 /*@editable*/ line-height:150%;
-                padding-top:20px;
-                padding-right:20px;
-                padding-bottom:20px;
-                padding-left:20px;
-                /*@editable*/ text-align:left;
+                /*@editable*/ padding-top:20px;
+                /*@editable*/ padding-right:10px;
+                /*@editable*/ padding-bottom:20px;
+                /*@editable*/ padding-left:10px;
+                /*@editable*/ text-align:center;
             }
 
             /**
@@ -390,16 +565,35 @@
             .footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
                 /*@editable*/ color:#606060;
                 /*@editable*/ font-weight:normal;
+                /*@editable*/ text-decoration:none;
+            }
+            .footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a /* Yahoo! Mail Override */{
                 /*@editable*/ text-decoration:underline;
             }
-
             /* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
 
             @media only screen and (max-width: 480px){
                 /* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
                 body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} /* Prevent Webkit platforms from changing default text sizes */
                 body{width:100% !important; min-width:100% !important;} /* Prevent iOS Mail from adding padding to the body */
+                /*
+                CSS selectors are written in attribute
+                selector format to prevent Yahoo Mail
+                from rendering media query styles on
+                desktop.
+                */
+                table[id="emailBody"], table[class="flexibleContainer"]{width:100% !important;}
+                table[class="flexibleContainer"] .textContent{margin-top: 15px; display: block; }
 
+                /*
+                The following style rule makes any
+                image classed with 'flexibleImage'
+                fluid when the query activates.
+                Make sure you add an inline max-width
+                to those images to prevent them
+                from blowing out.
+                */
+                img[class="flexibleImage"]{height:auto !important; width:100% !important;}
                 /* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
                 #bodyCell{padding:10px !important;}
 
@@ -453,21 +647,36 @@
                 * @tip Make the fourth-level headings larger in size for better readability on small screens.
                 */
                 h4{
-                    /*@editable*/ font-size:16px !important;
+                    /*@editable*/ font-size:20px !important;
                     /*@editable*/ line-height:100% !important;
                 }
 
                 /* ======== Header Styles ======== */
 
-                #templatePreheader{display:none !important;} /* Hide the template preheader to save space */
+                /* Hide the template preheader to save space */
+                #templatePreheader{
+                    /*display:none !important;*/
+                }
+                    #templatePreheader .preheaderContent{
+                        /*@editable*/ width: 100% !important;
+                        /*@editable*/ padding: 0px !important;
+                        /*@editable*/ display: inline-block;
+                        /*@editable*/ margin-bottom: 15px !important;
+                        /*@editable*/ text-align: left !important;
+                        /*@editable*/ text-align: left !important;
+                    }
+
+                /* hide the share with friends and tagline from mobile */
+                #inviteFriends{display:none !important;}
+                #tagline{display: none !important;}
 
                 /**
                 * @tab Mobile Styles
                 * @section header image
                 * @tip Make the main header image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
                 */
-                #headerImage{
-                    height:auto !important;
+                #heroImage, #smallHeroImage{
+                    /*@editable*/ height:auto !important;
                     /*@editable*/ max-width:600px !important;
                     /*@editable*/ width:100% !important;
                 }
@@ -478,7 +687,7 @@
                 * @tip Make the header content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
                 */
                 .headerContent{
-                    /*@editable*/ font-size:20px !important;
+                    /*@editable*/ font-size:11px !important;
                     /*@editable*/ line-height:125% !important;
                 }
 
@@ -490,7 +699,7 @@
                 * @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
                 */
                 .bodyContent{
-                    /*@editable*/ font-size:18px !important;
+                    /*@editable*/ font-size:16px !important;
                     /*@editable*/ line-height:125% !important;
                 }
 
@@ -504,7 +713,7 @@
                 * @tip Make the column image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
                 */
                 .columnImage{
-                    height:auto !important;
+                    /*@editable*/ height:auto !important;
                     /*@editable*/ max-width:480px !important;
                     /*@editable*/ width:100% !important;
                 }
@@ -518,7 +727,15 @@
                     /*@editable*/ font-size:16px !important;
                     /*@editable*/ line-height:125% !important;
                 }
-
+                /**
+                * @tab Mobile Styles
+                * @section center column text
+                * @tip Make the center column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+                */
+                .centerColumnContent{
+                    /*@editable*/ font-size:16px !important;
+                    /*@editable*/ line-height:125% !important;
+                }
                 /**
                 * @tab Mobile Styles
                 * @section right column text
@@ -528,7 +745,22 @@
                     /*@editable*/ font-size:16px !important;
                     /*@editable*/ line-height:125% !important;
                 }
-
+                .flexibleContainer .imageContent.left {
+                    /*@editable*/ padding-right: 0 !important;
+                }
+                .flexibleContainer .imageContent.left {
+                    /*@editable*/ padding-left: 0 !important;
+                    /*@editable*/ padding-right: 0 !important;
+                }
+                .flexibleContainer .imageContent.right,
+                .flexibleContainer .textContent {
+                    /*@editable*/ padding-right: 0 !important;
+                    /*@editable*/ padding-left: 0 !important;
+                }
+                .leftAlign, .flexibleContainer .leftAlign,
+                .leftAlign, .flexibleContainer .leftAlign h3, .leftAlign, .flexibleContainer .leftAlign .buttonWapper {
+                    /*@editable*/ text-align: center !important;
+                }
                 /* ======== Footer Styles ======== */
 
                 /**
@@ -541,9 +773,29 @@
                     /*@editable*/ line-height:115% !important;
                 }
 
-                .footerContent a{display:block !important;} /* Place footer social and utility links on their own lines, for easier access */
+                .footerContent a{
+                    /*@editable*/ display:block !important;
+                } /* Place footer social and utility links on their own lines, for easier access */
             }
         </style>
+        <!--
+            Outlook Conditional CSS
+            These two style blocks target Outlook 2007 & 2010 specifically, forcing
+            columns into a single vertical stack as on mobile clients. This is
+            primarily done to avoid the 'page break bug' and is optional.
+            More information here:
+            http://templates.mailchimp.com/development/css/outlook-conditional-css
+        -->
+        <!--[if mso 12]>
+            <style type="text/css">
+                .flexibleContainer{display:block !important; width:100% !important;}
+            </style>
+        <![endif]-->
+        <!--[if mso 14]>
+            <style type="text/css">
+                .flexibleContainer{display:block !important; width:100% !important;}
+            </style>
+        <![endif]-->
     </head>
     <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
         <center>
@@ -552,67 +804,164 @@
                     <td align="center" valign="top" id="bodyCell">
                         <!-- BEGIN TEMPLATE // -->
                         <table border="0" cellpadding="0" cellspacing="0" id="templateContainer">
+
+                            <!-- BEGIN PREHEADER // -->
                             <tr>
                                 <td align="center" valign="top">
-                                    <!-- BEGIN PREHEADER // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
                                         <tr>
-                                            <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" mc:edit="preheader_content00">
+                                            <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:110px; padding-bottom:10px; padding-left:10px;" mc:edit="preheader_content00">
                                                 Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients.
                                             </td>
                                             <!-- *|IFNOT:ARCHIVE_PAGE|* -->
-                                            <td valign="top" width="180" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;" mc:edit="preheader_content01">
+                                            <td valign="top" width="180" class="preheaderContent" style="padding-top:10px; padding-right:10px; padding-bottom:10px; padding-left:0; text-align:right;" mc:edit="preheader_content01">
                                                 Email not displaying correctly?<br /><a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
                                             </td>
                                             <!-- *|END:IF|* -->
                                         </tr>
                                     </table>
-                                    <!-- // END PREHEADER -->
                                 </td>
                             </tr>
+                            <!-- // END PREHEADER -->
+
+                            <!-- MADE HEADER // -->
                             <tr>
                                 <td align="center" valign="top">
-                                    <!-- BEGIN HEADER // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
                                         <tr>
-                                            <td valign="top" class="headerContent">
-                                                <img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                            <td valign="top" class="headerContent" id="inviteFriends">
+                                                Invite friends, <br />
+                                                Share &pound;30
+                                            </td>
+                                            <td valign="top" class="headerContent logo">
+                                                 <img src="http://static.made.com/skin/frontend/made/default/images/logo.gif" style="max-width:600px;" id="madeLogo" mc:label="made_logo" mc:edit="made_logo" mc:allowdesigner mc:allowtext width="155" height="41" />
+                                            </td>
+                                            <td valign="top" class="headerContent right" id="tagline">
+                                                Great design direct<br />
+                                                from the makers
                                             </td>
                                         </tr>
                                     </table>
-                                    <!-- // END HEADER -->
                                 </td>
                             </tr>
+                            <!-- // END MADE HEADER -->
+
+                            <!-- MADE SPECIAL OFFERS // -->
                             <tr>
                                 <td align="center" valign="top">
-                                    <!-- BEGIN BODY // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="specialOffer">
+                                        <tr>
+                                            <td valign="top" id="specialOfferContent" mc:edit="specialOffers" mc:editable>
+                                                Special Offer:
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- END MADE SPECIAL OFFERS -->
+
+                            <!-- BEGIN BODY // -->
+                            <tr>
+                                <td align="center" valign="top">
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
                                         <tr>
-                                            <td valign="top" class="bodyContent" mc:edit="body_content">
-                                                <h1>Designing Your Template</h1>
-                                                <h3>Creating a good-looking email is simple</h3>
-                                                Customize your template by clicking on the style editor tabs up above. Set your fonts, colors, and styles. After setting your styling is all done you can click here in this area, delete the text, and start adding your own awesome content.
-                                                <br />
-                                                <br />
-                                                <h2>Styling Your Content</h2>
-                                                <h4>Make your email easy to read</h4>
-                                                After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style. 
+                                            <td valign="top" class="bodyContent header" mc:edit="body_header" mc:editable >
+                                                <h1>Title goes here</h1>
+                                            </td>
+                                        </tr>
+                                        <tr mc:repeatable>
+                                            <td valign="top" class="bodyContent copy" mc:edit="body_content" mc:editable >
+                                                <h3>Product name, &pound;499</h3>
+                                                <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+                                            </td>
+                                        </tr>
+                                        <tr mc:repeatable>
+                                            <td valign="top" class="buttonWapper" mc:edit="button_text" mc:editable>
+                                                <span class="button">Lorem Ipsum</span>
                                             </td>
                                         </tr>
                                     </table>
-                                    <!-- // END BODY -->
                                 </td>
                             </tr>
+                            <!-- // END BODY -->
+
+                            <!-- // HERO IMAGE -->
                             <tr>
                                 <td align="center" valign="top">
-                                    <!-- BEGIN COLUMNS // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="heroImageWrapper">
+                                        <tr mc:repeatable>
+                                            <td valign="top" class="bodyContent">
+                                                <img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" style="max-width:600px;" id="heroImage" mc:label="hero_image" mc:edit="hero_image" mc:allowdesigner mc:allowtext mc:editable />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- // END HERO IMAGE -->
+
+                            <!-- // SMALL HERO IMAGE -->
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="smallHeroImageWrapper" >
+                                        <tr>
+                                            <td valign="top" class="bodyContent" >
+                                                <div mc:repeatable="testRepeat" mc:variant="without background color" >
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="smallHeroCopy" bgcolor="#FFFFFF">
+                                                        <tr mc:repeatable  mc:editable >
+                                                            <td>
+                                                                <img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" style="max-width:600px;" id="smallHeroImage" mc:label="small_hero_image" mc:edit="small_hero_image" mc:allowdesigner mc:allowtext mc:editable />
+                                                            </td>
+                                                        </tr>
+                                                        <tr mc:repeatable  mc:editable >
+                                                            <td valign="top" mc:edit="small_hero_image_copy" mc:editable mc:repeatable id="smallHeroCopy" >
+                                                                <h4>Natural clours</h4>
+                                                                <p>This text sites under the small hero images</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr mc:repeatable>
+                                                            <td valign="top" class="buttonWapper" mc:edit="button_text" mc:editable>
+                                                                <span class="button">Lorem Ipsum</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div mc:repeatable="testRepeat" mc:variant="with background color" >
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="smallHeroCopy" bgcolor="#e4e4e4">
+                                                        <tr mc:repeatable  mc:editable >
+                                                            <td>
+                                                                <img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" style="max-width:600px;" id="smallHeroImage" mc:label="small_hero_image" mc:edit="small_hero_image" mc:allowdesigner mc:allowtext mc:editable />
+                                                            </td>
+                                                        </tr>
+                                                        <tr mc:repeatable  mc:editable >
+                                                            <td valign="top" mc:edit="small_hero_image_copy" mc:editable mc:repeatable id="smallHeroCopy" >
+                                                                <h4>Natural clours</h4>
+                                                                <p>This text sites under the small hero images</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr mc:repeatable>
+                                                            <td valign="top" class="buttonWapper" mc:edit="button_text" mc:editable>
+                                                                <span class="button">Lorem Ipsum</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- // END SMALL HERO IMAGE -->
+
+                            <!-- TALL COLUMNS // -->
+                            <tr>
+                                <td align="center" valign="top">
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
                                         <tr mc:repeatable>
                                             <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
                                                 <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                     <tr>
                                                         <td class="leftColumnContent">
-                                                            <img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:260px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                            <img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:280px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -630,7 +979,7 @@
                                                 <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                     <tr>
                                                         <td class="rightColumnContent">
-                                                            <img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:260px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
+                                                            <img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:280px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -646,9 +995,245 @@
                                             </td>
                                         </tr>
                                     </table>
-                                    <!-- // END COLUMNS -->
                                 </td>
                             </tr>
+                            <!-- // END TALL COLUMNS -->
+
+                            <!--  LEFT / RIGHT CENTER  // -->
+                            <tr mc:repeatable="doubleLeftRightWraper">
+                                <td align="center" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <div mc:repeatable="doubleLeftRight">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+                                                        <tr>
+                                                            <td valign="top" width="600" class="flexibleContainerCell">
+                                                                <table align="Left" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
+                                                                    <tr>
+                                                                        <td align="Left" valign="top" class="imageContent left" mc:edit="rightLeftImage">
+                                                                            <img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" width="280" class="flexibleImage" mc:allowdesigner mc:allowtext mc:editable />
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <table align="Right" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
+                                                                    <tr>
+                                                                        <td valign="top" class="textContent " mc:edit="rightLeftContent">
+                                                                            <h3>Right Column</h3>
+                                                                            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                <tr>
+                                                                                    <td valign="top" class="buttonWapper" mc:edit="button_text" mc:editable>
+                                                                                        <span class="button">Lorem Ipsum</span>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div mc:repeatable="doubleLeftRight">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+                                                        <tr>
+                                                            <td valign="top" width="600" class="flexibleContainerCell">
+                                                                <table align="Right" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
+                                                                    <tr>
+                                                                        <td align="Left" valign="top" class="imageContent right" mc:edit="leftRightImage">
+                                                                            <img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" width="280" class="flexibleImage" mc:allowdesigner mc:allowtext mc:editable />
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <table align="Left" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
+                                                                    <tr>
+                                                                        <td valign="top" class="textContent" mc:edit="leftRightContent">
+                                                                            <h3>Left Column</h3>
+                                                                            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                <tr>
+                                                                                    <td valign="top" class="buttonWapper" mc:edit="button_text" mc:editable>
+                                                                                        <span class="button">Lorem Ipsum</span>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!--  // END LEFT / RIGHT VARIATIONS -->
+
+                            <!--  LEFT / RIGHT Text Align Left / Right  // -->
+                            <tr mc:repeatable="doubleLeftRightWraper">
+                                <td align="center" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <div mc:repeatable="doubleLeftRight">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+                                                        <tr>
+                                                            <td valign="top" width="600" class="flexibleContainerCell">
+                                                                <table align="Left" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
+                                                                    <tr>
+                                                                        <td align="Left" valign="top" class="imageContent left" mc:edit="rightLeftImage">
+                                                                            <img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" width="280" class="flexibleImage" mc:allowdesigner mc:allowtext mc:editable />
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <table align="Right" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
+                                                                    <tr>
+                                                                        <td valign="top" class="textContent leftAlign" mc:edit="rightLeftContent">
+                                                                            <h3>Right Column</h3>
+                                                                            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                <tr>
+                                                                                    <td valign="top" class="buttonWapper" mc:edit="button_text" mc:editable>
+                                                                                        <span class="button">Lorem Ipsum</span>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div mc:repeatable="doubleLeftRight">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
+                                                        <tr>
+                                                            <td valign="top" width="600" class="flexibleContainerCell">
+                                                                <table align="Right" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
+                                                                    <tr>
+                                                                        <td align="Left" valign="top" class="imageContent right" mc:edit="leftRightImage">
+                                                                            <img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" width="280" class="flexibleImage" mc:allowdesigner mc:allowtext mc:editable />
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <table align="Left" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
+                                                                    <tr>
+                                                                        <td valign="top" class="textContent leftAlign" mc:edit="leftRightContent">
+                                                                            <h3>Left Column</h3>
+                                                                            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                <tr>
+                                                                                    <td valign="top" class="buttonWapper" mc:edit="button_text" mc:editable>
+                                                                                        <span class="button">Lorem Ipsum</span>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!--  // LEFT / RIGHT Text Align Left / Right -->
+
+                            <!-- THREE COLUMN // -->
+                                <tr>
+                                    <td align="center" valign="top">
+                                        <!-- BEGIN COLUMNS // -->
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
+                                            <tr mc:repeatable>
+                                                <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                                    <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td class="leftColumnContent">
+                                                                <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td valign="top" class="leftColumnContent" mc:edit="left_column_content">
+                                                                <h3>Left col content</h3>
+                                                                <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+                                                                <br />
+                                                                <br />
+                                                                You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                                    <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td class="centerColumnContent">
+                                                                <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td valign="top" class="centerColumnContent" mc:edit="center_column_content">
+                                                                <h3>Center col content</h3>
+                                                                <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+                                                                <br />
+                                                                <br />
+                                                                You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                                    <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td class="rightColumnContent">
+                                                                <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td valign="top" class="rightColumnContent" mc:edit="right_column_content">
+                                                                <h3>Right col content</h3>
+                                                                <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+                                                                <br />
+                                                                <br />
+                                                                You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- // END COLUMNS -->
+                                    </td>
+                                </tr>
+                            <!-- // END THREE COLUMN -->
+
+                            <!-- CUSTOMER MESSAGE // -->
+                                <tr>
+                                    <td align="center" valign="top">
+                                        <!-- BEGIN BODY // -->
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
+                                            <tr>
+                                                <td valign="top" class="bodyContent" mc:edit="CustomerMessage" id="CustomerMessage">
+                                                    <p> Dear Customer
+                                                        <br /><br />
+                                                        Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue.
+                                                        <br />
+                                                        <br />
+                                                        Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- // END BODY -->
+                                    </td>
+                                </tr>
+                            <!-- // END CUSTOMER MESSAGE -->
+
+
                             <tr>
                                 <td align="center" valign="top">
                                     <!-- BEGIN FOOTER // -->
@@ -667,12 +1252,12 @@
                                                 <br />
                                                 <strong>Our mailing address is:</strong>
                                                 <br />
-                                                *|HTML:LIST_ADDRESS_HTML|* *|END:IF|* 
+                                                *|HTML:LIST_ADDRESS_HTML|* *|END:IF|*
                                             </td>
                                         </tr>
                                         <tr>
                                             <td valign="top" class="footerContent" style="padding-top:0;" mc:edit="footer_content02">
-                                                <a href="*|UNSUB|*">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;<a href="*|UPDATE_PROFILE|*">update subscription preferences</a>&nbsp;
+                                                You can unsubscribe from this email at any time. Please <a href="*|UPDATE_PROFILE|*">click here</a>
                                             </td>
                                         </tr>
                                     </table>
