@@ -319,7 +319,7 @@
             * @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
             */
             .headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
-                /*@editable*/ color:#EB4102;
+                /*@editable*/ color:#000000;
                 /*@editable*/ font-weight:normal;
                 /*@editable*/ text-decoration:underline;
             }
@@ -388,7 +388,7 @@
             * @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
             */
             .bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
-                /*@editable*/ color:#EB4102;
+                /*@editable*/ color:#000000;
                 /*@editable*/ font-weight:normal;
                 /*@editable*/ text-decoration:underline;
             }
@@ -454,7 +454,7 @@
             * @tip Set the styling for your email's left column content links. Choose a color that helps them stand out from your text.
             */
             .leftColumnContent a:link, .leftColumnContent a:visited, /* Yahoo! Mail Override */ .leftColumnContent a .yshortcuts /* Yahoo! Mail Override */{
-                /*@editable*/ color:#EB4102;
+                /*@editable*/ color:#000000;
                 /*@editable*/ font-weight:normal;
                 /*@editable*/ text-decoration:underline;
             }
@@ -482,7 +482,7 @@
             * @tip Set the styling for your email's center column content links. Choose a color that helps them stand out from your text.
             */
             .centerColumnContent a:link, .centerColumnContent a:visited, /* Yahoo! Mail Override */ .centerColumnContent a .yshortcuts /* Yahoo! Mail Override */{
-                /*@editable*/ color:#EB4102;
+                /*@editable*/ color:#000000;
                 /*@editable*/ font-weight:normal;
                 /*@editable*/ text-decoration:underline;
             }
@@ -510,7 +510,7 @@
             * @tip Set the styling for your email's right column content links. Choose a color that helps them stand out from your text.
             */
             .rightColumnContent a:link, .rightColumnContent a:visited, /* Yahoo! Mail Override */ .rightColumnContent a .yshortcuts /* Yahoo! Mail Override */{
-                /*@editable*/ color:#EB4102;
+                /*@editable*/ color:#000000;
                 /*@editable*/ font-weight:normal;
                 /*@editable*/ text-decoration:underline;
             }
@@ -523,15 +523,29 @@
                 /*@editable*/ margin-right: auto;
                 /*@editable*/ margin-left: auto;
             }
-
+            .leftColumnContent.noSpacing, .centerColumnContent.noSpacing, .rightColumnContent.noSpacing{
+                /*@editable*/ padding-top: 0;
+                /*@editable*/ padding-bottom: 10px;
+            }
+                .centerColumnContent.noSpacing.footer{
+                    /*@editable*/ border-left: 1px dotted #000000;
+                    /*@editable*/ border-right: 1px dotted #000000;
+                }
+            .leftColumnContent.center, .centerColumnContent.center, .rightColumnContent.center{
+                /*@editable*/ text-align: center;
+            }
+                .leftColumnContent.center p, .centerColumnContent.center p, .rightColumnContent.center p{
+                    /*@editable*/ margin-top: 0;
+                    /*@editable*/ margin-bottom: 0;
+                }
             /* ========== CUSTOMER MESSAGE ========== */
             #CustomerMessage {
                 /*@editable*/ padding-top: 70px;
                 /*@editable*/ padding-bottom: 70px;
                 /*@editable*/ padding-left: 85px;
                 /*@editable*/ padding-right: 85px;
-                /*@editable*/ border-top: 1px dotted #000000;
-                /*@editable*/ border-bottom: 1px dotted #000000;
+                /*@editable*/ /*border-top: 1px dotted #000000;*/
+                /*@editable*/ /*border-bottom: 1px dotted #000000;*/
             }
                 #CustomerMessage p {
                     /*@editable*/ margin-top: 0;
@@ -545,6 +559,10 @@
             * @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
             * @theme footer
             */
+            #footerWrapper {
+                /*@editable*/ border-bottom: 1px dotted #000000;
+                /*@editable*/ border-top: 1px dotted #000000;
+            }
             .footerContent{
                 /*@editable*/ color:#808080;
                 /*@editable*/ font-family:'Kameron','Georgia',serif;
@@ -761,18 +779,29 @@
                 .leftAlign, .flexibleContainer .leftAlign h3, .leftAlign, .flexibleContainer .leftAlign .buttonWapper {
                     /*@editable*/ text-align: center !important;
                 }
+                /* ========== CUSTOMER MESSAGE ========== */
+                #CustomerMessage {
+                    /*@editable*/ padding-top: 20px;
+                    /*@editable*/ padding-bottom: 20px;
+                    /*@editable*/ padding-left: 15px;
+                    /*@editable*/ padding-right: 15px;
+                    /*@editable*/ border-top: 1px dotted #000000;
+                    /*@editable*/ border-bottom: 1px dotted #000000;
+                }
                 /* ======== Footer Styles ======== */
-
                 /**
                 * @tab Mobile Styles
                 * @section footer text
                 * @tip Make the body content text larger in size for better readability on small screens.
                 */
+                .centerColumnContent.noSpacing.footer{
+                    /*@editable*/ border-left: none !important;
+                    /*@editable*/ border-right: none !important;
+                }
                 .footerContent{
                     /*@editable*/ font-size:14px !important;
                     /*@editable*/ line-height:115% !important;
                 }
-
                 .footerContent a{
                     /*@editable*/ display:block !important;
                 } /* Place footer social and utility links on their own lines, for easier access */
@@ -955,7 +984,7 @@
                             <!-- TALL COLUMNS // -->
                             <tr>
                                 <td align="center" valign="top">
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateColumns">
                                         <tr mc:repeatable>
                                             <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
                                                 <table border="0" cellpadding="20" cellspacing="0" width="100%">
@@ -1146,70 +1175,70 @@
                             <!--  // LEFT / RIGHT Text Align Left / Right -->
 
                             <!-- THREE COLUMN // -->
-                                <tr>
-                                    <td align="center" valign="top">
-                                        <!-- BEGIN COLUMNS // -->
-                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
-                                            <tr mc:repeatable>
-                                                <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
-                                                    <table border="0" cellpadding="20" cellspacing="0" width="100%">
-                                                        <tr>
-                                                            <td class="leftColumnContent">
-                                                                <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-                                                                <h3>Left col content</h3>
-                                                                <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                                <br />
-                                                                <br />
-                                                                You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                                <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
-                                                    <table border="0" cellpadding="20" cellspacing="0" width="100%">
-                                                        <tr>
-                                                            <td class="centerColumnContent">
-                                                                <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" />
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td valign="top" class="centerColumnContent" mc:edit="center_column_content">
-                                                                <h3>Center col content</h3>
-                                                                <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                                <br />
-                                                                <br />
-                                                                You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                                <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
-                                                    <table border="0" cellpadding="20" cellspacing="0" width="100%">
-                                                        <tr>
-                                                            <td class="rightColumnContent">
-                                                                <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td valign="top" class="rightColumnContent" mc:edit="right_column_content">
-                                                                <h3>Right col content</h3>
-                                                                <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                                <br />
-                                                                <br />
-                                                                You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <!-- // END COLUMNS -->
-                                    </td>
-                                </tr>
+                            <tr>
+                                <td align="center" valign="top">
+                                    <!-- BEGIN COLUMNS // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateColumns">
+                                        <tr mc:repeatable>
+                                            <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                                <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td class="leftColumnContent">
+                                                            <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" class="leftColumnContent" mc:edit="left_column_content">
+                                                            <h3>Left col content</h3>
+                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+                                                            <br />
+                                                            <br />
+                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                                <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td class="centerColumnContent">
+                                                            <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" class="centerColumnContent" mc:edit="center_column_content">
+                                                            <h3>Center col content</h3>
+                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+                                                            <br />
+                                                            <br />
+                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                                <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td class="rightColumnContent">
+                                                            <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" class="rightColumnContent" mc:edit="right_column_content">
+                                                            <h3>Right col content</h3>
+                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+                                                            <br />
+                                                            <br />
+                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END COLUMNS -->
+                                </td>
+                            </tr>
                             <!-- // END THREE COLUMN -->
 
                             <!-- CUSTOMER MESSAGE // -->
@@ -1239,11 +1268,63 @@
                                     <!-- BEGIN FOOTER // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
                                         <tr>
+                                            <td align="center" valign="top">
+                                                <!-- BEGIN COLUMNS // -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateColumns" id="footerWrapper">
+                                                    <tr>
+                                                        <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                                            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td class="leftColumnContent noSpacing">
+                                                                        <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td valign="top" class="leftColumnContent center" mc:edit="footerShowroom">
+                                                                        <p><a href="">visit our showroom</a></p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                                            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td class="centerColumnContent noSpacing footer">
+                                                                        <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td valign="top" class="centerColumnContent center" mc:edit="footerContactUs">
+                                                                        <p><a href="">contact us</a></p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                                            <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                    <td class="rightColumnContent noSpacing">
+                                                                        <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td valign="top" class="rightColumnContent center" mc:edit="footerFreeFabricSample">
+                                                                        <p><a href="">free fabric sample</a></p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // END COLUMNS -->
+                                            </td>
+                                        </tr>
+                                        <tr>
                                             <td valign="top" class="footerContent" mc:edit="footer_content00">
                                                 <a href="*|TWITTER:PROFILEURL|*">Follow on Twitter</a>&nbsp;&nbsp;&nbsp;<a href="*|FACEBOOK:PROFILEURL|*">Friend on Facebook</a>&nbsp;&nbsp;&nbsp;<a href="*|FORWARD|*">Forward to Friend</a>&nbsp;
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <!-- <tr>
                                             <td valign="top" class="footerContent" style="padding-top:0;" mc:edit="footer_content01">
                                                 <em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
                                                 <br />
@@ -1254,7 +1335,7 @@
                                                 <br />
                                                 *|HTML:LIST_ADDRESS_HTML|* *|END:IF|*
                                             </td>
-                                        </tr>
+                                        </tr> -->
                                         <tr>
                                             <td valign="top" class="footerContent" style="padding-top:0;" mc:edit="footer_content02">
                                                 You can unsubscribe from this email at any time. Please <a href="*|UPDATE_PROFILE|*">click here</a>
