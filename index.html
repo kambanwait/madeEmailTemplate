@@ -10,6 +10,8 @@
         <title>*|MC:SUBJECT|*</title>
         <style type="text/css">
             /* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+            ::selection { background: rgb(250, 234, 37); /* Safari */ }
+            ::-moz-selection { background: rgb(250, 234, 37); /* Firefox */ }
             #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
             .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
             .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
@@ -414,14 +416,14 @@
             /* ========== Hero image styles ========== */
             #heroImageWrapper {}
             #smallHeroImageWrapper {}
-                #smallHeroImageWrapper #smallHeroCopy {
+                #smallHeroImageWrapper .smallHeroCopy {
                     /*@editable*/ text-align: center;
                     /*@editable*/ width: 100%;
                     /*@editable*/ margin-top: 15px;
                     /*@editable*/ display: block;
                 }
 
-                #smallHeroImageWrapper #smallHeroCopy {
+                #smallHeroImageWrapper .smallHeroCopy {
                     /*@editable*/ margin-bottom: 15px;
                     /*@editable*/ display: block;
                 }
@@ -543,6 +545,38 @@
                     /*@editable*/ margin-top: 0;
                     /*@editable*/ margin-bottom: 0;
                 }
+            /* DOUBLE PROCDUCE */
+            .templateColumnContainer.doubleProduct .leftColumnContent.copy,
+            .templateColumnContainer.doubleProduct .rightColumnContent.copy {
+                /*@editable*/ text-align: center;
+                /*@editable*/ padding-left: 50px;
+                /*@editable*/ padding-right: 50px;
+            }
+            /* GRID OF PRODUCTS AT BOTTOM OF PAGE */
+            .productsGrid .leftColumnContent.center,
+            .productsGrid .centerColumnContent.center,
+            .productsGrid .rightColumnContent.center {
+                /*@editable*/ text-align: center;
+            }
+                .productsGrid .leftColumnContent,
+                .productsGrid .centerColumnContent,
+                .productsGrid .rightColumnContent {
+                    /*@editable*/ padding-left: 0;
+                    /*@editable*/ padding-right: 0;
+                }
+                    .productsGrid .leftColumnContent img {
+                        /*@editable*/ text-align: left;
+                        /*@editable*/ margin-left: 0;
+                    }
+                    .productsGrid .centerColumnContent img {
+                        /*@editable*/ text-align: center;
+                        /*@editable*/ margin-left: auto;
+                        /*@editable*/ margin-right: auto;
+                    }
+                    .productsGrid .rightColumnContent img {
+                        /*@editable*/ text-align: right;
+                        /*@editable*/ margin-right: 0;
+                    }
             /* ========== CUSTOMER MESSAGE ========== */
             #CustomerMessage {
                 /*@editable*/ padding-top: 70px;
@@ -592,11 +626,11 @@
                     /*@editable*/ display: block;
                     /*@editable*/ margin-left: 0px;
                     /*@editable*/ margin-right: 0px;
-                    /*@editable*/ width: 30px;
-                    /*@editable*/ height: 30px;
+                    /*@editable*/ width: 17px;
+                    /*@editable*/ height: 17px;
                 }
                 #socialWrapper .templateColumnContainer {
-                    /*@editable*/ width: auto;
+                    /*@editable*/ width: 30px;
                 }
             .footerContent{
                 /*@editable*/ color:#808080;
@@ -759,6 +793,8 @@
                 /* ======== Column Styles ======== */
 
                 .templateColumnContainer{display:block !important; width:100% !important;}
+                #socialWrapper .templateColumnContainer { display:inline-block !important; width:70px !important; }
+                #footerWrapper .templateColumnContainer { display:inline-block !important; width:33% !important; }
 
                 /**
                 * @tab Mobile Styles
@@ -798,6 +834,9 @@
                     /*@editable*/ font-size:16px !important;
                     /*@editable*/ line-height:125% !important;
                 }
+                table[class="flexibleContainer"] {
+                    /*@editable*/ height: auto !important;
+                }
                 .flexibleContainer .imageContent.left {
                     /*@editable*/ padding-right: 0 !important;
                 }
@@ -814,19 +853,14 @@
                 .leftAlign, .flexibleContainer .leftAlign h3, .leftAlign, .flexibleContainer .leftAlign .buttonWapper {
                     /*@editable*/ text-align: center !important;
                 }
-                .productsGrid .leftColumnContent.center,
-                .productsGrid .centerColumnContent.center,
-                .productsGrid .rightColumnContent.center {
-                    text-align: center;
-                }
                 /* ========== CUSTOMER MESSAGE ========== */
                 #CustomerMessage {
-                    /*@editable*/ padding-top: 20px;
-                    /*@editable*/ padding-bottom: 20px;
-                    /*@editable*/ padding-left: 15px;
-                    /*@editable*/ padding-right: 15px;
-                    /*@editable*/ border-top: 1px dotted #000000;
-                    /*@editable*/ border-bottom: 1px dotted #000000;
+                    /*@editable*/ padding-top: 20px !important;
+                    /*@editable*/ padding-bottom: 20px !important;
+                    /*@editable*/ padding-left: 15px !important;
+                    /*@editable*/ padding-right: 15px !important;
+                    /*@editable*/ border-top: 1px dotted #000000 !important;
+                    /*@editable*/ border-bottom: 1px dotted #000000 !important;
                 }
                 /* ======== Footer Styles ======== */
                 /**
@@ -903,7 +937,7 @@
                                                 Share &pound;30
                                             </td>
                                             <td valign="top" class="headerContent logo">
-                                                 <img src="http://static.made.com/skin/frontend/made/default/images/logo.gif" style="max-width:600px;" id="madeLogo" mc:label="made_logo" mc:edit="made_logo" mc:allowdesigner mc:allowtext width="155" height="41" />
+                                                 <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/madeLogo.png" style="max-width:600px;" id="madeLogo" mc:label="made_logo" mc:edit="made_logo" mc:allowdesigner mc:allowtext width="155" height="41" />
                                             </td>
                                             <td valign="top" class="headerContent right" id="tagline">
                                                 Great design direct<br />
@@ -960,7 +994,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="heroImageWrapper">
                                         <tr mc:repeatable>
                                             <td valign="top" class="bodyContent">
-                                                <img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" style="max-width:600px;" id="heroImage" mc:label="hero_image" mc:edit="hero_image" mc:allowdesigner mc:allowtext mc:editable />
+                                                <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/largeHeroImage.jpg" style="max-width:600px;" id="heroImage" mc:label="hero_image" mc:edit="hero_image" mc:allowdesigner mc:allowtext mc:editable />
                                             </td>
                                         </tr>
                                     </table>
@@ -975,14 +1009,14 @@
                                         <tr>
                                             <td valign="top" class="bodyContent" >
                                                 <div mc:repeatable="testRepeat" mc:variant="without background color" >
-                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="smallHeroCopy" bgcolor="#FFFFFF">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF">
                                                         <tr mc:repeatable  mc:editable >
                                                             <td>
-                                                                <img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" style="max-width:600px;" id="smallHeroImage" mc:label="small_hero_image" mc:edit="small_hero_image" mc:allowdesigner mc:allowtext mc:editable />
+                                                                <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/smallHeroImage.jpg" style="max-width:600px;" id="smallHeroImage" mc:label="small_hero_image" mc:edit="small_hero_image" mc:allowdesigner mc:allowtext mc:editable />
                                                             </td>
                                                         </tr>
                                                         <tr mc:repeatable  mc:editable >
-                                                            <td valign="top" mc:edit="small_hero_image_copy" mc:editable mc:repeatable id="smallHeroCopy" >
+                                                            <td valign="top" mc:edit="small_hero_image_copy" mc:editable mc:repeatable class="smallHeroCopy" >
                                                                 <h4>Natural clours</h4>
                                                                 <p>This text sites under the small hero images</p>
                                                             </td>
@@ -995,14 +1029,14 @@
                                                     </table>
                                                 </div>
                                                 <div mc:repeatable="testRepeat" mc:variant="with background color" >
-                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="smallHeroCopy" bgcolor="#e4e4e4">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#e4e4e4">
                                                         <tr mc:repeatable  mc:editable >
                                                             <td>
-                                                                <img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" style="max-width:600px;" id="smallHeroImage" mc:label="small_hero_image" mc:edit="small_hero_image" mc:allowdesigner mc:allowtext mc:editable />
+                                                                <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/smallHeroImage.jpg" style="max-width:600px;" id="smallHeroImage" mc:label="small_hero_image" mc:edit="small_hero_image" mc:allowdesigner mc:allowtext mc:editable />
                                                             </td>
                                                         </tr>
                                                         <tr mc:repeatable  mc:editable >
-                                                            <td valign="top" mc:edit="small_hero_image_copy" mc:editable mc:repeatable id="smallHeroCopy" >
+                                                            <td valign="top" mc:edit="small_hero_image_copy" mc:editable mc:repeatable class="smallHeroCopy" >
                                                                 <h4>Natural clours</h4>
                                                                 <p>This text sites under the small hero images</p>
                                                             </td>
@@ -1026,38 +1060,32 @@
                                 <td align="center" valign="top">
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateColumns">
                                         <tr mc:repeatable>
-                                            <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                            <td align="center" valign="top" class="templateColumnContainer doubleProduct" style="padding-top:20px;">
                                                 <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                     <tr>
                                                         <td class="leftColumnContent">
-                                                            <img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:280px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                            <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/doubleImageThumb.jpg" style="max-width:280px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br />
-                                                            <br />
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                        <td valign="top" class="leftColumnContent copy" mc:edit="left_column_content">
+                                                            <h3>£400</h3>
+                                                            Aenean eu leo quam. Pellentesque ornare.
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </td>
-                                            <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                            <td align="center" valign="top" class="templateColumnContainer doubleProduct" style="padding-top:20px;">
                                                 <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                     <tr>
                                                         <td class="rightColumnContent">
-                                                            <img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:280px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
+                                                            <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/doubleImageThumb.jpg" style="max-width:280px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td valign="top" class="rightColumnContent" mc:edit="right_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br />
-                                                            <br />
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                        <td valign="top" class="rightColumnContent copy" mc:edit="right_column_content">
+                                                            <h3>£400</h3>
+                                                            Aenean eu leo quam. Pellentesque ornare.
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -1081,11 +1109,11 @@
                                                                 <table align="Left" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
                                                                     <tr>
                                                                         <td align="Left" valign="top" class="imageContent left" mc:edit="rightLeftImage">
-                                                                            <img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" width="280" class="flexibleImage" mc:allowdesigner mc:allowtext mc:editable />
+                                                                            <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/leftRightHolder.jpg" width="280" class="flexibleImage" mc:allowdesigner mc:allowtext mc:editable />
                                                                         </td>
                                                                     </tr>
                                                                 </table>
-                                                                <table align="Right" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
+                                                                <table align="Right" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer" height="300">
                                                                     <tr>
                                                                         <td valign="top" class="textContent " mc:edit="rightLeftContent">
                                                                             <h3>Right Column</h3>
@@ -1111,11 +1139,11 @@
                                                                 <table align="Right" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
                                                                     <tr>
                                                                         <td align="Left" valign="top" class="imageContent right" mc:edit="leftRightImage">
-                                                                            <img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" width="280" class="flexibleImage" mc:allowdesigner mc:allowtext mc:editable />
+                                                                            <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/leftRightHolder.jpg" width="280" class="flexibleImage" mc:allowdesigner mc:allowtext mc:editable />
                                                                         </td>
                                                                     </tr>
                                                                 </table>
-                                                                <table align="Left" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
+                                                                <table align="Left" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer" height="300">
                                                                     <tr>
                                                                         <td valign="top" class="textContent" mc:edit="leftRightContent">
                                                                             <h3>Left Column</h3>
@@ -1154,11 +1182,11 @@
                                                                 <table align="Left" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
                                                                     <tr>
                                                                         <td align="Left" valign="top" class="imageContent left" mc:edit="rightLeftImage">
-                                                                            <img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" width="280" class="flexibleImage" mc:allowdesigner mc:allowtext mc:editable />
+                                                                            <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/leftRightShortHolder.jpg" width="280" class="flexibleImage" mc:allowdesigner mc:allowtext mc:editable />
                                                                         </td>
                                                                     </tr>
                                                                 </table>
-                                                                <table align="Right" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
+                                                                <table align="Right" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer" height="210">
                                                                     <tr>
                                                                         <td valign="top" class="textContent leftAlign" mc:edit="rightLeftContent">
                                                                             <h3>Right Column</h3>
@@ -1184,11 +1212,11 @@
                                                                 <table align="Right" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
                                                                     <tr>
                                                                         <td align="Left" valign="top" class="imageContent right" mc:edit="leftRightImage">
-                                                                            <img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" width="280" class="flexibleImage" mc:allowdesigner mc:allowtext mc:editable />
+                                                                            <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/leftRightShortHolder.jpg" width="280" class="flexibleImage" mc:allowdesigner mc:allowtext mc:editable />
                                                                         </td>
                                                                     </tr>
                                                                 </table>
-                                                                <table align="Left" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer">
+                                                                <table align="Left" border="0" cellpadding="0" cellspacing="0" width="280" class="flexibleContainer" height="210">
                                                                     <tr>
                                                                         <td valign="top" class="textContent leftAlign" mc:edit="leftRightContent">
                                                                             <h3>Left Column</h3>
@@ -1223,7 +1251,7 @@
                                                 <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                     <tr>
                                                         <td class="leftColumnContent">
-                                                            <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                            <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/thirdImageThumb.jpg" style="max-width:190px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1238,7 +1266,7 @@
                                                 <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                     <tr>
                                                         <td class="centerColumnContent">
-                                                            <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" />
+                                                            <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/thirdImageThumb.jpg" style="max-width:190px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" />
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1253,7 +1281,7 @@
                                                 <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                     <tr>
                                                         <td class="rightColumnContent">
-                                                            <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
+                                                            <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/thirdImageThumb.jpg" style="max-width:190px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1301,8 +1329,8 @@
                                                         <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
                                                             <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                                 <tr>
-                                                                    <td class="leftColumnContent noSpacing">
-                                                                        <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                                    <td class="leftColumnContent noSpacing center">
+                                                                        <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/showroom.png" style="max-width:100px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1315,8 +1343,8 @@
                                                         <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
                                                             <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                                 <tr>
-                                                                    <td class="centerColumnContent noSpacing footer">
-                                                                        <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" />
+                                                                    <td class="centerColumnContent noSpacing center footer">
+                                                                        <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/contactus.png" style="max-width:100px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" />
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1329,8 +1357,8 @@
                                                         <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
                                                             <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                                 <tr>
-                                                                    <td class="rightColumnContent noSpacing">
-                                                                        <img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
+                                                                    <td class="rightColumnContent noSpacing center">
+                                                                        <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/fabricsamples.png" style="max-width:100px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1355,7 +1383,7 @@
                                                                 <tr>
                                                                     <td valign="top" class="leftColumnContent right">
                                                                         <a href="*|TWITTER:PROFILEURL|*">
-                                                                            <img src="images/twitter.png" alt="Follow on Twitter" mc:allowdesigner mc:allowtext width="30" height="30" class="socialIcon" />
+                                                                            <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/twitter.png" alt="Follow on Twitter" mc:allowdesigner mc:allowtext width="20" height="20" class="socialIcon" />
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -1366,7 +1394,7 @@
                                                                 <tr>
                                                                     <td valign="top" class="centerColumnContent center">
                                                                         <a href="*|FORWARD|*">
-                                                                            <img src="images/pinterest.png" alt="Forward to Friend" mc:allowdesigner mc:allowtext width="30" height="30" class="socialIcon" />
+                                                                            <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/pinterest.png" alt="Forward to Friend" mc:allowdesigner mc:allowtext width="20" height="20" class="socialIcon" />
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -1377,7 +1405,7 @@
                                                                 <tr>
                                                                     <td valign="top" class="rightColumnContent left">
                                                                         <a href="*|FACEBOOK:PROFILEURL|*">
-                                                                            <img src="images/facebook.png" alt="Friend on Facebook" mc:allowdesigner mc:allowtext width="30" height="30" class="socialIcon" />
+                                                                            <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/facebook.png" alt="Friend on Facebook" mc:allowdesigner mc:allowtext width="20" height="20" class="socialIcon" />
                                                                         </a>
                                                                     </td>
                                                                 </tr>
