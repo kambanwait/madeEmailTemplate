@@ -112,9 +112,9 @@
                 /*@editable*/ line-height:100%;
                 /*@editable*/ letter-spacing:normal;
                 /*@editable*/ margin-top:0;
-                /*@editable*/ margin-right:0;
+                /*@editable*/ margin-right:auto;
                 /*@editable*/ margin-bottom:10px;
-                /*@editable*/ margin-left:0;
+                /*@editable*/ margin-left:auto;
                 /*@editable*/ text-align:left;
             }
 
@@ -135,9 +135,9 @@
                 /*@editable*/ line-height:100%;
                 /*@editable*/ letter-spacing:normal;
                 /*@editable*/ margin-top:0;
-                /*@editable*/ margin-right:0;
+                /*@editable*/ margin-right:auto;
                 /*@editable*/ margin-bottom:10px;
-                /*@editable*/ margin-left:0;
+                /*@editable*/ margin-left:auto;
                 /*@editable*/ text-align:center;
             }
 
@@ -156,9 +156,9 @@
                 /*@editable*/ line-height:100%;
                 /*@editable*/ letter-spacing:normal;
                 /*@editable*/ margin-top:0;
-                /*@editable*/ margin-right:0;
+                /*@editable*/ margin-right:auto;
                 /*@editable*/ margin-bottom:5px;
-                /*@editable*/ margin-left:0;
+                /*@editable*/ margin-left:auto;
                 /*@editable*/ text-align:center;
             }
 
@@ -256,7 +256,7 @@
                 /*@editable*/ color:#808080;
                 /*@editable*/ font-family:'Kameron','Georgia',serif;
                 /*@editable*/ font-weight:400 ;
-                /*@editable*/ font-size:10px;
+                /*@editable*/ font-size:12px;
                 /*@editable*/ line-height:125%;
                 /*@editable*/ text-align:left;
             }
@@ -380,8 +380,10 @@
                 .bodyContent.copy {
                     /*@editable*/ padding-bottom:0px;
                     /*@editable*/ padding-top:10px;
+                    /*@editable*/ padding-left:80px;
+                    /*@editable*/ padding-right:80px;
                     /*@editable*/ text-align:center;
-                    /*@editable*/ width:80%;
+                    /*@editable*/ width:auto;
                     /*@editable*/ display:block;
                     /*@editable*/ margin-left: auto;
                     /*@editable*/ margin-right: auto;
@@ -564,18 +566,37 @@
                     /*@editable*/ padding-left: 0;
                     /*@editable*/ padding-right: 0;
                 }
+                    .productsGrid .leftColumnContent {
+                        padding-right: 5px;
+                    }
+                    .productsGrid .centerColumnContent {
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+                    .productsGrid .rightColumnContent {
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
                     .productsGrid .leftColumnContent img {
-                        /*@editable*/ text-align: left;
-                        /*@editable*/ margin-left: 0;
+                        /*@editable*/ /*text-align: left;*/
+                        /*@editable*/ text-align: center;
+                        /*@editable*/ margin-left: auto;
+                        /*@editable*/ width: auto;
+                        /*@editable*/ max-width: 195px;
                     }
                     .productsGrid .centerColumnContent img {
                         /*@editable*/ text-align: center;
                         /*@editable*/ margin-left: auto;
                         /*@editable*/ margin-right: auto;
+                        /*@editable*/ width: auto;
+                        /*@editable*/ max-width: 195px;
                     }
                     .productsGrid .rightColumnContent img {
-                        /*@editable*/ text-align: right;
-                        /*@editable*/ margin-right: 0;
+                        /*@editable*/ /*text-align: right;*/
+                        /*@editable*/ text-align: center;
+                        /*@editable*/ margin-right: auto;
+                        /*@editable*/ width: auto;
+                        /*@editable*/ max-width: 195px;
                     }
             /* ========== CUSTOMER MESSAGE ========== */
             #CustomerMessage {
@@ -624,8 +645,8 @@
                 }
                 #socialWrapper img.socialIcon {
                     /*@editable*/ display: block;
-                    /*@editable*/ margin-left: 0px;
-                    /*@editable*/ margin-right: 0px;
+                    /*@editable*/ margin-left: auto;
+                    /*@editable*/ margin-right: auto;
                     /*@editable*/ width: 17px;
                     /*@editable*/ height: 17px;
                 }
@@ -789,7 +810,10 @@
                     /*@editable*/ font-size:16px !important;
                     /*@editable*/ line-height:125% !important;
                 }
-
+                .bodyContent.copy {
+                    /*@editable*/ padding-left:10px !important;
+                    /*@editable*/ padding-right:10px !important;
+                }
                 /* ======== Column Styles ======== */
 
                 .templateColumnContainer{display:block !important; width:100% !important;}
@@ -805,6 +829,19 @@
                     /*@editable*/ height:auto !important;
                     /*@editable*/ max-width:480px !important;
                     /*@editable*/ width:100% !important;
+                    /*@editable*/ padding-left:0  !important;
+                    /*@editable*/ padding-right:0  !important;
+                }
+                .productsGrid .leftColumnContent {
+                    padding-right: 0 !important;
+                }
+                .productsGrid .rightColumnContent {
+                    padding-right: 0 !important;
+                    padding-left: 0 !important;
+                }
+                .productsGrid .centerColumnContent {
+                    padding-left: 0 !important;
+                    padding-right: 0 !important;
                 }
 
                 /**
@@ -937,7 +974,7 @@
                                                 Share &pound;30
                                             </td>
                                             <td valign="top" class="headerContent logo">
-                                                 <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/madeLogo.png" style="max-width:600px;" id="madeLogo" mc:label="made_logo" mc:edit="made_logo" mc:allowdesigner mc:allowtext width="155" height="41" />
+                                                <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/madeLogo.png" style="max-width:600px;" id="madeLogo" mc:label="made_logo" mc:edit="made_logo" mc:allowdesigner mc:allowtext width="155" height="41" />
                                             </td>
                                             <td valign="top" class="headerContent right" id="tagline">
                                                 Great design direct<br />
@@ -953,7 +990,7 @@
                             <tr>
                                 <td align="center" valign="top">
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="specialOffer">
-                                        <tr>
+                                        <tr mc:repeatable>
                                             <td valign="top" id="specialOfferContent" mc:edit="specialOffers" mc:editable>
                                                 Special Offer:
                                             </td>
@@ -1244,14 +1281,14 @@
 
                             <!-- THREE COLUMN // -->
                             <tr>
-                                <td align="center" valign="top" class="bodyContent">
+                                <td align="center" valign="top" class="">
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateColumns productsGrid">
                                         <tr mc:repeatable>
                                             <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
                                                 <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                     <tr>
-                                                        <td class="leftColumnContent">
-                                                            <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/thirdImageThumb.jpg" style="max-width:190px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                        <td class="leftColumnContent center">
+                                                            <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/thirdImageThumb.jpg" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1265,8 +1302,8 @@
                                             <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
                                                 <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                     <tr>
-                                                        <td class="centerColumnContent">
-                                                            <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/thirdImageThumb.jpg" style="max-width:190px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" />
+                                                        <td class="centerColumnContent center">
+                                                            <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/thirdImageThumb.jpg" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" />
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1280,8 +1317,8 @@
                                             <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
                                                 <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                     <tr>
-                                                        <td class="rightColumnContent">
-                                                            <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/thirdImageThumb.jpg" style="max-width:190px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
+                                                        <td class="rightColumnContent center">
+                                                            <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/thirdImageThumb.jpg" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -1302,7 +1339,7 @@
                                 <tr>
                                     <td align="center" valign="top">
                                         <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
-                                            <tr>
+                                            <tr mc:repeatable>
                                                 <td valign="top" class="bodyContent" mc:edit="CustomerMessage" id="CustomerMessage">
                                                     <p> Dear Customer
                                                         <br /><br />
@@ -1330,7 +1367,7 @@
                                                             <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                                 <tr>
                                                                     <td class="leftColumnContent noSpacing center">
-                                                                        <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/showroom.png" style="max-width:100px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                                        <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/showroom.png" style="width:100px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" width="100" />
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1344,7 +1381,7 @@
                                                             <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                                 <tr>
                                                                     <td class="centerColumnContent noSpacing center footer">
-                                                                        <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/contactus.png" style="max-width:100px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" />
+                                                                        <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/contactus.png" style="width:100px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" width="100" />
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1358,7 +1395,7 @@
                                                             <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                                 <tr>
                                                                     <td class="rightColumnContent noSpacing center">
-                                                                        <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/fabricsamples.png" style="max-width:100px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
+                                                                        <img src="http://www.scriptedpixels.co.uk/playground/madeEmailTemplate/images/fabricsamples.png" style="width:100px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" width="100" />
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
