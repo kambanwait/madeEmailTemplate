@@ -10,8 +10,6 @@
         <title>*|MC:SUBJECT|*</title>
         <style type="text/css">
             /* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
-            ::selection { background: rgb(250, 234, 37); /* Safari */ }
-            ::-moz-selection { background: rgb(250, 234, 37); /* Firefox */ }
             #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
             .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
             .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
@@ -66,7 +64,7 @@
             }
 
             .flexibleContainerCell{
-                /*@editable*/ padding-top:20px;
+                /*@editable*/ padding-top:40px;
                 /*@editable*/ /*padding-right:10px;*/
                 /*@editable*/ /*padding-left:10px;*/
             }
@@ -102,9 +100,9 @@
             * @style heading 1
             */
             h1{
-                /*@editable*/ color:#000 !important;
+                /*@editable*/ color:#000000 !important;
                 /*@editable*/ display:block;
-                /*@editable*/ font-family:'Montserrat',sans-serif;
+                /*@editable*/ font-family:'Montserrat', Arial, sans-serif;
                 /*@editable*/ text-transform:uppercase;
                 /*@editable*/ font-size:25px;
                 /*@editable*/ font-style:normal;
@@ -125,11 +123,11 @@
             * @style heading 2
             */
             h2{
-                /*@editable*/ color:#000 !important;
+                /*@editable*/ color:#333333 !important;
                 /*@editable*/ display:block;
-                /*@editable*/ font-family:'Montserrat',sans-serif;
+                /*@editable*/ font-family:'Montserrat', Arial, sans-serif;
                 /*@editable*/ text-transform:uppercase;
-                /*@editable*/ font-size:20px;
+                /*@editable*/ font-size:18px;
                 /*@editable*/ font-style:normal;
                 /*@editable*/ font-weight:normal;
                 /*@editable*/ line-height:100%;
@@ -148,16 +146,16 @@
             * @style heading 3
             */
             h3{
-                /*@editable*/ color:#000 !important;
+                /*@editable*/ color:#333333 !important;
                 /*@editable*/ display:block;
                 /*@editable*/ font-family:'Kameron','Georgia',serif;
-                /*@editable*/ font-size:22px;
+                /*@editable*/ font-size:20px;
                 /*@editable*/ font-weight:normal;
                 /*@editable*/ line-height:100%;
                 /*@editable*/ letter-spacing:normal;
                 /*@editable*/ margin-top:0;
                 /*@editable*/ margin-right:auto;
-                /*@editable*/ margin-bottom:5px;
+                /*@editable*/ margin-bottom:15px;
                 /*@editable*/ margin-left:auto;
                 /*@editable*/ text-align:center;
             }
@@ -169,7 +167,7 @@
             * @style heading 4
             */
             h4{
-                /*@editable*/ color:#000 !important;
+                /*@editable*/ color:#333333 !important;
                 /*@editable*/ display:block;
                 /*@editable*/ font-family:'Kameron','Georgia',serif;
                 /*@editable*/ font-size:18px;
@@ -207,9 +205,9 @@
             }
                 .button {
                     /*@editable*/ cursor: pointer;
-                    /*@editable*/ font-family:'Montserrat',sans-serif;
+                    /*@editable*/ font-family:'Montserrat', verdana, sans-serif;
                     /*@editable*/ font-size:10px;
-                    /*@editable*/ font-weight:bold;
+                    /*@editable*/ font-weight:normal;
                     /*@editable*/ letter-spacing:normal;
                     /*@editable*/ text-transform:uppercase;
                     /*@editable*/ background-color: rgb(250, 234, 37);
@@ -238,10 +236,10 @@
                     /*@editable*/ margin-left: auto;
                     /*@editable*/ background-color: #FAEA25;
                     /*@editable*/ text-align: center;
-                    /*@editable*/ padding-bottom: 4px;
-                    /*@editable*/ padding-left: 15px;
-                    /*@editable*/ padding-right: 15px;
-                    /*@editable*/ padding-top: 5px;
+                    /*@editable*/ padding-bottom: 10px;
+                    /*@editable*/ padding-left: 18px;
+                    /*@editable*/ padding-right: 18px;
+                    /*@editable*/ padding-top: 11px;
                     /*@editable*/ line-height: 13px;
                     /*@editable*/ color:#000000;
                 }
@@ -295,7 +293,7 @@
                 /*@editable*/ line-height:100%;
                 /*@editable*/ text-align:left;
                 /*@editable*/ vertical-align:middle;
-                /*@editable*/ border-bottom: 1px solid #000;
+                /*@editable*/ border-bottom: 1px solid #333333;
                 /*@editable*/ padding-top:20px;
                 /*@editable*/ padding-right:10px;
                 /*@editable*/ padding-bottom:0px;
@@ -368,18 +366,19 @@
                 /*@editable*/ font-family:'Kameron','Georgia',serif;
                 /*@editable*/ font-size:16px;
                 /*@editable*/ line-height:150%;
-                /*@editable*/ padding-top:15px;
+                /*@editable*/ padding-top:40px;
                 /*@editable*/ padding-right:10px;
-                /*@editable*/ padding-bottom:20px;
+                /*@editable*/ padding-bottom:40px;
                 /*@editable*/ padding-left:10px;
                 /*@editable*/ text-align:left;
             }
                 .bodyContent.header {
-                    /*@editable*/ padding-bottom:0px;
+                    /*@editable*/ padding-bottom:20px;
+                    /*@editable*/ padding-top:20px;
                 }
                 .bodyContent.copy {
                     /*@editable*/ padding-bottom:0px;
-                    /*@editable*/ padding-top:10px;
+                    /*@editable*/ padding-top:0px;
                     /*@editable*/ padding-left:80px;
                     /*@editable*/ padding-right:80px;
                     /*@editable*/ text-align:center;
@@ -402,6 +401,7 @@
             .bodyContent h1 {
                 /*@editable*/ text-align: center;
                 /*@editable*/ padding-bottom: 0px;
+                /*@editable*/ margin-bottom: 0px;
             }
             .bodyContent img{
                 /*@editable*/ display:inline;
@@ -409,7 +409,7 @@
                 /*@editable*/ max-width:560px;
             }
             .bodyContent p {
-               /*@editable*/ margin-top: 5px;
+               /*@editable*/ margin-top: 0px;
                /*@editable*/ margin-bottom: 15px;
                /*@editable*/ margin-left: 0;
                /*@editable*/ margin-right: 0;
@@ -417,20 +417,24 @@
 
             /* ========== Hero image styles ========== */
             #heroImageWrapper {}
+            #heroImageWrapper .bodyContent {
+                /*@editable*/ padding-top:20px;
+                /*@editable*/ padding-bottom:0px;
+            }
             #smallHeroImageWrapper {}
                 #smallHeroImageWrapper .smallHeroCopy {
                     /*@editable*/ text-align: center;
                     /*@editable*/ width: 100%;
-                    /*@editable*/ margin-top: 15px;
+                    /*@editable*/ margin-top: 20px;
                     /*@editable*/ display: block;
                 }
 
                 #smallHeroImageWrapper .smallHeroCopy {
-                    /*@editable*/ margin-bottom: 15px;
+                    /*@editable*/ margin-bottom: 20px;
                     /*@editable*/ display: block;
                 }
                 #smallHeroImageWrapper .buttonWapper {
-                    /*@editable*/ margin-bottom: 15px;
+                    /*@editable*/ margin-bottom: 20px;
                     /*@editable*/ display: block;
                 }
             /* ========== Column Styles ========== */
@@ -954,7 +958,7 @@
                                                 Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients.
                                             </td> -->
                                             <!-- *|IFNOT:ARCHIVE_PAGE|* -->
-                                            <td valign="top" width="300" class="preheaderContent" style="padding-top:10px; padding-right:10px; padding-bottom:10px; padding-left:0; text-align:right;" mc:edit="preheader_content01">
+                                            <td valign="top" width="300" class="preheaderContent" style="padding-top:0; padding-right:10px; padding-bottom:10px; padding-left:0; text-align:right;" mc:edit="preheader_content01">
                                                 Email not displaying correctly? <a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
                                             </td>
                                             <!-- *|END:IF|* -->
@@ -1284,7 +1288,7 @@
                                 <td align="center" valign="top" class="">
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateColumns productsGrid">
                                         <tr mc:repeatable>
-                                            <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                            <td align="center" valign="top" class="templateColumnContainer" style="padding-top:40px;">
                                                 <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                     <tr>
                                                         <td class="leftColumnContent center">
@@ -1299,7 +1303,7 @@
                                                     </tr>
                                                 </table>
                                             </td>
-                                            <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                            <td align="center" valign="top" class="templateColumnContainer" style="padding-top:40px;">
                                                 <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                     <tr>
                                                         <td class="centerColumnContent center">
@@ -1314,7 +1318,7 @@
                                                     </tr>
                                                 </table>
                                             </td>
-                                            <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                            <td align="center" valign="top" class="templateColumnContainer" style="padding-top:40px;">
                                                 <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                     <tr>
                                                         <td class="rightColumnContent center">
